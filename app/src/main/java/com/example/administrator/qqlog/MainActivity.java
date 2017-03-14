@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         initVariable();
         initView();
     }
-
+    //控件的方法
     private void initView() {
         qqImg = (ImageView) findViewById(R.id.qqImg);
         qqName = (TextView) findViewById(R.id.qqName);
@@ -91,11 +91,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onResult(SHARE_MEDIA platform) {
             Log.d("plat","platform"+platform);
-
             Toast.makeText(MainActivity.this, platform + " 分享成功啦", Toast.LENGTH_SHORT).show();
-
         }
-
         @Override
         public void onError(SHARE_MEDIA platform, Throwable t) {
             Toast.makeText(MainActivity.this,platform + " 分享失败啦", Toast.LENGTH_SHORT).show();
@@ -103,12 +100,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("throw","throw:"+t.getMessage());
             }
         }
-
         @Override
         public void onCancel(SHARE_MEDIA platform) {
             Toast.makeText(MainActivity.this,platform + " 分享取消了", Toast.LENGTH_SHORT).show();
         }
     };
+    //授权和初始化值
     private void initVariable() {
         authListener = new UMAuthListener() {
             @Override
