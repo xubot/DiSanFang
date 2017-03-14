@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+    <TextView
+        android:id="@+id/unlog"
+        android:layout_below="@id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注销" />
+    <TextView
+        android:id="@+id/ShareAction"
+        android:layout_below="@id/unlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享"/>
+    <ImageView
+        android:layout_below="@id/ShareAction"
+        android:id="@+id/qqImg"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/qqName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/qqImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
